@@ -1,10 +1,22 @@
-<p>app-header works!</p>
+<div class="header">
+    <div class="logo">
+            <img class=logo-pic src="{{ ImageConstants.imagePath.logo }}"/>
+    </div >
+    <div class="names">
+        <a class="items" routerLink='/home'>Home</a>
+        <a class="items" [routerLink]="['/traditional']"  routerLinkActive="active">Traditional</a>
+        <a class="items" routerLink='/casual'>Casual</a>
+        <a class="items" routerLink='/uniforms'>Uniforms</a>
+        <a class="items" routerLink='/pants'>Cotton and jeans pant</a>
+        <a class="items" routerLink='/aboutus'>About us</a>
+    </div>
+    <div class="icons">
+    
+    <p-button styleClass="p-button-secondary p-button-text"><fa-icon [icon]="faSearch"></fa-icon></p-button>
+    <p-button styleClass="p-button-outlined p-button-secondary" label = Login></p-button>
+    <p-button styleClass="p-button-secondary p-button-text"><fa-icon [icon]="faCartShopping"></fa-icon></p-button>
 
-<div>
-    <fa-icon [icon]="faCoffee"></fa-icon>
+    </div>
 </div>
-
-
-<p-button label="Submit" [disabled]="true"></p-button>
 
 

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { faCoffee ,faSearch, faCartShopping} from '@fortawesome/free-solid-svg-icons';
+import { ImageConstants } from 'src/app/constants/image-constants';
 
 @Component({
   selector: 'app-app-header',
@@ -7,5 +8,7 @@ import { faCoffee } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./app-header.component.scss']
 })
 export class AppHeaderComponent {
-  faCoffee = faCoffee;
+  faSearch = faSearch;
+  faCartShopping = faCartShopping;
+  protected readonly ImageConstants  = ImageConstants ;
 }
